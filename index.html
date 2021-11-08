@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Web Navigator</title>
+</head>
+<body>
+   <h1>Web Navigator</h1>
+   <p>Simulates the navigational operations of a web browser</p>
+    <div class="stat">
+        <h2 id="current-page"></h2>
+        <h2 id="next-page"></h2>
+        <h2 id="back-page"></h2>
+    </div>
+    <div>  
+            <label>Enter a url:</label>
+            <input id="page" required>
+            <button id="page-btn" class="buttons">OK</button>
+    </div>
+    <div>
+        <button id="back" class="buttons">Back</button>
+        <button id="next" class="buttons">Next</button>
+    </div>
+    <div class="flex-container-main">
+        <div id="back-page-stack" class="flex-container">
+           
+           <h3>Back pages stack</h3>
+        </div>
+        <div id="next-page-stack" class="flex-container">
+            
+            <h3>Next pages stack</h3>
+        </div>
+        </div>
+    <script src="./Node.js"></script>
+    <script src="./LinkedList.js"></script>
+    <script src="./Stack.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
